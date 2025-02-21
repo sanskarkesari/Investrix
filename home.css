@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: relative;
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+section {
+    
+    padding: 20px;
+
+}
+.about-section {
+    background-image: url('homemain.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    height: 70vh; /* Sets the height of the section to full viewport height */
+    padding: 50px; /* Adds padding around the content */
+    color: white; /* Adjust text color for contrast */
+    position: relative;
+}
+
+.about-content {
+    /*background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Adjust width as needed */
+    animation: fadeIn 1.5s ease-in-out; /* Animation effect */
+    position: relative; /* Positioning the content */
+    top: 50%; /* Center vertically */
+    left: 10%; /* Align to the left */
+    transform: translateY(-50%); 
+    font-size: 20px;/* Adjust for vertical centering */
+    text-align: justify;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #333;
+}
+
+.join-us-button {
+    position: absolute; /* Position the button absolutely */
+    right: -600px; /* Distance from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    padding: 80px 80px; /* Increase padding for a larger button */
+    font-size: 18px; /* Increase font size */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 85px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.join-us-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.benefit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefit-card {
+    background-color: #f9f9f9;
+    border:  1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.benefit-card h3 {
+    color: #333;
+}
+
+.benefit-card p {
+    color: #666;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-layout {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center; /* Center-align text in the sections */
+}
+
+.container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Stack horizontal sections vertically */
+}
+
+.homepage-layout h2 {
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.horizontal-section {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 20px; /* Space below each horizontal section */
+}
+
+.vertical-item {
+    flex: 1; /* Allow items to grow equally */
+    margin: 0 10px; /* Margin between items */
+    background: #f1f1f1; /* Light background for vertical items */
+    border: 1px solid #ccc; /* Border around items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside items */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.vertical-item:hover {
+    transform: translateY(5px); /* Move the item up slightly on hover */
+}
+
+.vertical-item h3 {
+    margin-top: 0; /* Remove top margin for headings */
+}
+
+.read-more {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px; /* Space above the link */
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.upcoming-stories-section {
+
+    padding: 30px;
+    color: rgb(0, 0, 0); /* Adjust text color for contrast */
+    position: relative;
+}
+
+.upcoming-stories-content {
+   /* Semi-transparent background for readability */
+    padding: fixed;
+ /* Center the content */
+    /*animation: fadeIn 1.5s ease-in-out; /* Animation effect */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* ... Your existing CSS ... */
+.social-media {
+    display: flex;
+    flex-direction: column; /* Make the items stack vertically */
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin-bottom: 10px;
+    margin-right: 300px; 
+    padding-top: 5px;/* Space between icons vertically */
+}
+
+.social-media li a span {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    color: #fff; /* Text color for social media links */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.social-media li a:hover span {
+    color: #e0f7fa; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-section p, .footer-section ul {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #e0f7fa;
+    text-decoration: none;
+}
+.footer-section ul li a {
+    padding:px
+}
+
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+}
