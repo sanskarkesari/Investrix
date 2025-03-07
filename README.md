@@ -53,8 +53,5 @@ cd investment-platform
 4. Push to the branch (`git push origin feature-branch`)
 5. Open a Pull Request
 
-## 🔒 License
-This project is **MIT Licensed**.
-
 ---
 Made with ❤️ by [Sanskar Kesari](https://github.com/sanskarkesari)
